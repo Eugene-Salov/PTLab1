@@ -4,6 +4,7 @@ import pytest
 # Определение типа данных для студентов
 DataType = Dict[str, List[Tuple[str, int]]]
 
+
 class TestSearchBestStud:
 
     @pytest.fixture()
@@ -29,7 +30,7 @@ class TestSearchBestStud:
         return data, test_student
 
     def test_init_calc_rating(self, input_data: tuple[DataType,
-                                                      str]) -> None:
+                              str]) -> None:
         calc_rating = SearchBestStud(input_data[0])
         assert input_data[0] == calc_rating.students
 

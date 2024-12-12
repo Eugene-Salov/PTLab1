@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import yaml
 import pytest
-
 from Types import DataType
 from DataReader import DataReader
 
@@ -10,13 +9,13 @@ class YAMLDataReader(DataReader):
 
     @pytest.fixture()
     def file_and_data_content(self) -> tuple[str, DataType]:
-      Yaml = "- Иванов Иван Иванович:\n"+\
-      " математика: 95\n"+\
-      " литература: 100\n"+\
+      Yaml = "- Иванов Иван Иванович:\n" + \
+      " математика: 95\n" + \
+      " литература: 100\n" + \
       " программирование: 80\n"
         
       data = {
-        "Иванов Иван Иванович":[
+        "Иванов Иван Иванович": [
           ("математика", 95), ("литература", 100), ("программирование", 80)
         ],
       }
