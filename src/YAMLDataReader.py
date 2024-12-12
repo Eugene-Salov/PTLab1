@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import yaml
-
 from Types import DataType
 from DataReader import DataReader
 

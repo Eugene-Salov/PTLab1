@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import yaml
 import pytest
 from Types import DataType
 from DataReader import DataReader
